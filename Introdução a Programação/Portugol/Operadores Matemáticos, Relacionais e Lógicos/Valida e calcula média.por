@@ -1,6 +1,18 @@
+/*
+ * Deve ler duas notas digitadas por um aluno (nota1 e nota2). Ambas devem estar entre 0
+ * e 10. O algoritmo deve:
+ * - Calcular a média das duas.
+ * - Avaliar a expressão lógica:
+ * nota1 >= 0 and nota1 <= 10 and nota2 >= 0 and nota2 <= 10
+ * O programa deve exibir:
+ * - A média das notas.
+ * - O resultado da expressão lógica que verifica se ambas as notas são válidas.
+
+ */
+ // O desafio é realizar a atividade sem utilizar estrutura de decisão
 programa
 {
-	
+
 	funcao inicio()
 	{
 		real nota1,nota2
@@ -20,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 10; 
+ * @POSICAO-CURSOR = 463; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
