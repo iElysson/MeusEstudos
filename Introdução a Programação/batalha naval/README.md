@@ -2,31 +2,43 @@
 ------------------------------------------------------------------------------
 
 **Objetivo**
+
 Desenvolver uma versão do jogo Batalha Naval, com interface em console, utilizando
 linguagem Java, e aplicando os principais conceitos de programação.
 
 **Descrição Geral do Jogo**
+
 Dois jogadores se enfrentam em turnos, tentando afundar todos os navios do adversário
 antes de perder os seus. Cada jogador possui um tabuleiro de defesa (onde posiciona
 seus navios) e um tabuleiro de ataque (onde registra seus disparos contra o oponente).
 
+
 //////////////////////////////////////////////////////////////////////////////////
 
+
 **Estrutura dos Tabuleiros**
+
 **Cada jogador terá:**
+
 1 Tabuleiro de Defesa: onde os seus navios serão posicionados
+
 1 Tabuleiro de Ataque: onde serão marcadas as tentativas de atingir os navios
 inimigos
+
 - Ambos os tabuleiros terão o tamanho fixo de 8 linhas x 8 colunas
 
 **Tipos de Navios**
+
 Devem ser posicionados 6 navios no total, sendo:
-Tipo de Navio       Tamanho         Quantidade
-Navio Grande        3 posições      1 unidade
-Navio Médio         2 posições      2 unidades
-Navio Pequeno       1 posição       3 unidades
+
+| Tipo de Navio | Tamanho    | Quantidade |
+|---------------|------------|------------|
+| Navio Grande  | 3 posições | 1 unidade  |
+| Navio Médio   | 2 posições | 2 unidades |
+| Navio Pequeno | 1 posição  | 3 unidades |
 
 **Posicionamento dos Navios**
+
 Você deverá implementar uma rotina que cuidará de posicionar os 6 navios no tabuleiro.
 A rotina deve :
 - Posicionar todos os navios de forma aleatória
@@ -38,7 +50,9 @@ A rotina deve :
 //////////////////////////////////////////////////////////////////////////////////
 
 **Regras do Jogo**
+
 **Início do Jogo**
+
 1. Cada jogador deve executar a rotina de posicionamento automático de navios (opção
 no menu).
 2. O jogador 1 inicia a partida.
@@ -66,7 +80,9 @@ seu próprio durante o jogo.
 //////////////////////////////////////////////////////////////////////////////////
 
 **Menu de Opções (por turno)**
+
 Durante o jogo, apresente ao jogador o seguinte menu:
+```
 ======= MENU =======
 1 - Posicionar navios automaticamente
 2 - Atacar oponente
@@ -74,24 +90,27 @@ Durante o jogo, apresente ao jogador o seguinte menu:
 4 - Ver rodadas restantes
 5 - Sair do jogo
 ====================
+```
 
 **Legenda dos Caracteres**
-Significado                 Símbolo         
-~                           Água (posição ainda não atacada)
-'#'                         Parte de navio (visível só no final)
-X                           Acerto (navio atingido)
-O                           Erro (ataque na água)
+
+| Símbolo | Significado                            |
+|:-------:|----------------------------------------|
+| `~`     | Água (posição ainda não atacada)       |
+| `#`     | Parte de navio (visível só no final)   |
+| `X`     | Acerto (navio atingido)                |
+| `O`     | Erro (ataque na água)                  |
 
 **Exemplo de Resultado Final (Empate)**
 Abaixo, um exemplo ilustrativo de como os tabuleiros podem ser exibidos ao final da
 partida. (Cada jodador tinha direiro a 10 jogadas)
-
+```
 Tabuleiro de Defesa do Jogador 1
 ###~~~~~
 ~~#~~~~~ 
 ~~x~~~~~
 ~~x~~~~~
-~~~~##~~ 
+~~~~##~~
 ~~~~~X~~
 x~~~~~~~
 
@@ -127,3 +146,4 @@ Resultado:
 - Acertos do Jogador 1: 4
 - Acertos do Jogador 2: 4
 Empate técnico
+```
